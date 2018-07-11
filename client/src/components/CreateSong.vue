@@ -23,41 +23,13 @@
           v-model="song.genre"
         ></v-text-field>
 
-        <v-text-field
-          label="Album"
-          required
-          :rules="[required]"
-          v-model="song.album"
-        ></v-text-field>
-
-        <v-text-field
-          label="Album Image Url"
-          required
-          :rules="[required]"
-          v-model="song.albumImageUrl"
-        ></v-text-field>
-
-        <v-text-field
-          label="YouTube ID"
-          required
-          :rules="[required]"
-          v-model="song.youtubeId"
-        ></v-text-field>
       </panel>
     </v-flex>
 
     <v-flex xs8>
-      <panel title="Song Structure" class="ml-2">
+      <panel title="Lyrics" class="ml-2">
+       
         <v-text-field
-          label="Tab"
-          multi-line
-          required
-          :rules="[required]"
-          v-model="song.tab"
-        ></v-text-field>
-
-        <v-text-field
-          label="Lyrics"
           multi-line
           required
           :rules="[required]"
@@ -88,12 +60,7 @@ export default {
       song: {
         title: null,
         artist: null,
-        genre: null,
-        album: null,
-        albumImageUrl: null,
-        youtubeId: null,
-        lyrics: null,
-        tab: null
+        genre: null
       },
       error: null,
       required: (value) => !!value || 'Required.'

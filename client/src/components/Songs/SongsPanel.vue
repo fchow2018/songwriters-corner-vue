@@ -5,8 +5,8 @@
       :to="{
         name: 'songs-create'
       }"
-      class="cyan accent-2"
-      light
+      class="red"
+      dark
       medium
       absolute
       right
@@ -21,7 +21,7 @@
       :key="song.id">
 
       <v-layout>
-        <v-flex xs6>
+        <v-flex s6>
           <div class="song-title">
             {{song.title}}
           </div>
@@ -31,10 +31,10 @@
           <div class="song-genre">
             {{song.genre}}
           </div>
-
+          
           <v-btn
             dark
-            class="cyan"
+            class="red"
             :to="{
               name: 'song', 
               params: {
@@ -45,9 +45,6 @@
           </v-btn>
         </v-flex>
 
-        <v-flex xs6>
-          <img class="album-image" :src="song.albumImageUrl" />
-        </v-flex>
       </v-layout>
     </div>
   </panel>
@@ -74,6 +71,7 @@ export default {
 </script>
 
 <style scoped>
+
 .song {
   padding: 20px;
   height: 330px;
@@ -92,8 +90,4 @@ export default {
   font-size: 18px;
 }
 
-.album-image {
-  width: 70%;
-  margin: 0 auto;
-}
 </style>

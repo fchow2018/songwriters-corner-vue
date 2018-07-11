@@ -1,7 +1,7 @@
 <template>
   <v-layout column>
     <v-flex xs6 offset-xs3>
-      <panel title="Register">
+      <panel title="Sign Up">
         <form 
           name="tab-tracker-form"
           autocomplete="off">
@@ -22,9 +22,9 @@
         <br>
         <v-btn
           dark
-          class="cyan"
+          class="red"
           @click="register">
-          Register
+          Sign Up
         </v-btn>
       </panel>
     </v-flex>

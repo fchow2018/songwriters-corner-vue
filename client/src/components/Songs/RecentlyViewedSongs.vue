@@ -11,6 +11,9 @@
         <td class="text-xs-right">
           {{props.item.artist}}
         </td>
+        <td class="text-xs-right">
+          {{props.item.genre}}
+        </td>
       </template>
     </v-data-table>
   </panel>
@@ -31,6 +34,10 @@ export default {
         {
           text: 'Artist',
           value: 'artist'
+        },
+        {
+          text: 'Genre',
+          value: 'genre'
         }
       ],
       pagination: {

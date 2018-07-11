@@ -14,7 +14,7 @@
 
         <v-btn
           dark
-          class="cyan"
+          class="red"
           :to="{
             name: 'song-edit', 
             params () {
@@ -29,7 +29,7 @@
         <v-btn
           v-if="isUserLoggedIn && !bookmark"
           dark
-          class="cyan"
+          class="red"
           @click="setAsBookmark">
           Set As Bookmark
         </v-btn>
@@ -37,17 +37,12 @@
         <v-btn
           v-if="isUserLoggedIn && bookmark"
           dark
-          class="cyan"
+          class="red"
           @click="unsetAsBookmark">
           Unset As Bookmark
         </v-btn>
       </v-flex>
 
-      <v-flex xs6>
-        <img class="album-image" :src="song.albumImageUrl" />
-        <br>
-        {{song.album}}
-      </v-flex>
     </v-layout>
   </panel>
 </template>

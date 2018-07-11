@@ -1,5 +1,5 @@
 <template>
-  <v-toolbar fixed class="cyan" dark>
+  <v-toolbar fixed class="red" dark>
     <v-toolbar-title class="mr-4">
       <router-link 
         class="home"
@@ -7,7 +7,7 @@
         :to="{
           name: 'songs'
         }">
-        TabTracker
+        Songwriter's Corner
       </router-link>
     </v-toolbar-title>
 
